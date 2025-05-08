@@ -374,7 +374,7 @@ def export_results(specialty, pat_results, occ_results):
                        'Theatre Minutes Level'])
                        .sort_values(by=['Run', 'Time']))
     #write to csv
-    output_path = 'C:/Users/obriene/Projects/Wait Lists/Elective Activity Model/Outputs'
+    output_path = 'C:/Users/obriene/Projects/Discrete Event Simulation/Elective Activity Model/Outputs'
     patient_df.to_csv(f'{output_path}/{specialty} Patients.csv', index=False)
     occ_df.to_csv(f'{output_path}/{specialty} Occupancy.csv', index=False)
     return patient_df, occ_df
